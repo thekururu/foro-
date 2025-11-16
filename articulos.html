@@ -1,0 +1,243 @@
+﻿<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>NovaSite Forum</title>
+
+  <style>
+    @font-face {
+      font-family: 'CustomFontTitle';
+      src: url('https://fonts.googleapis.com/css2?family=Anton&display=swap');
+    }
+
+    @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400&display=swap');
+
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      background-color: #0F0F0F;
+      color: #eee;
+      font-family: 'Montserrat', sans-serif;
+      line-height: 1.6;
+      overflow-x: hidden;
+    }
+
+    nav {
+      position: fixed;
+      top: 0; left: 0; right: 0;
+      height: 70px;
+      background: linear-gradient(90deg, #4b3a0f, #d4af37, #b8860b);
+      display: flex;
+      align-items: center;
+      padding: 0 25px;
+      z-index: 10;
+      font-weight: 600;
+      font-size: 15px;
+      box-shadow: 0 0 15px rgba(212, 175, 55, 0.5);
+    }
+
+    nav img.logo {
+      height: 45px;
+      margin-right: 14px;
+    }
+
+    nav .nav-links {
+      display: flex;
+      gap: 28px;
+      flex-grow: 1;
+    }
+
+    nav .nav-links a {
+      color: #fff4c2;
+      text-decoration: none;
+      cursor: pointer;
+      position: relative;
+      transition: color 0.3s ease;
+    }
+
+    nav .nav-links a:hover {
+      color: #ffffff;
+    }
+
+    nav .nav-links a.active {
+      color: #fff;
+      font-weight: 700;
+    }
+
+    .hero {
+      position: relative;
+      height: 100vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      overflow: hidden;
+    }
+
+    .hero img {
+      position: absolute;
+      top: 0; left: 0;
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      z-index: -1;
+    }
+
+    .hero h1 {
+      font-family: 'Anton', sans-serif;
+      font-size: 6vw;
+      color: white;
+      text-transform: uppercase;
+      text-align: center;
+      letter-spacing: 0.1em;
+      text-shadow: 0 0 15px rgba(0,0,0,0.7);
+      z-index: 2;
+    }
+
+    .content {
+      max-width: 720px;
+      margin: 120px auto 100px auto;
+      padding: 0 20px;
+      font-size: 1.3rem;
+      text-align: justify;
+      line-height: 1.7;
+    }
+
+    .content h2 {
+      font-family: 'Anton', sans-serif;
+      font-size: 3rem;
+      margin-bottom: 24px;
+      color: white;
+      text-align: center;
+      letter-spacing: 0.05em;
+    }
+
+    .content p {
+      margin-bottom: 1.3em;
+    }
+
+.btn-redes {
+  display: block;
+  width: 380px;    
+  max-width: 90%;  
+  background: #ffd700;
+  color: #111;
+  padding: 22px 0;
+  border-radius: 50px;
+  font-weight: 700;
+  cursor: pointer;
+  text-align: center;
+  text-decoration: none;
+  font-size: 1.4rem;
+  margin: 40px auto; 
+  
+  
+  box-shadow: 0 0 25px rgba(255, 215, 0, 0.6);
+
+  
+  transition: transform 0.2s ease, box-shadow 0.3s ease;
+}
+
+
+.btn-redes:hover {
+  transform: scale(1.05);
+  box-shadow: 0 0 45px rgba(255, 215, 0, 0.85);
+}
+
+
+    footer {
+      background-color: #111;
+      color: #eee;
+      text-align: center;
+      padding: 20px;
+      font-size: 0.9rem;
+      margin-top: 40px;
+    }
+.card-noticia {
+  max-width: 900px;
+  margin: 80px auto;
+  background: #181818;
+  border-radius: 18px;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  padding: 0;
+  text-decoration: none;
+  color: white;
+  box-shadow: 0 0 18px rgba(212, 175, 55, 0.2);
+  transition: transform 0.2s ease, box-shadow 0.3s ease;
+}
+
+.card-noticia:hover {
+  transform: scale(1.03);
+  box-shadow: 0 0 35px rgba(212, 175, 55, 0.45);
+}
+
+.card-texto {
+  flex: 1;
+  padding: 30px;
+}
+
+.card-texto h3 {
+  font-size: 2rem;
+  font-family: 'Anton', sans-serif;
+  margin-bottom: 8px;
+}
+
+.card-texto p {
+  font-size: 0.95rem;
+  opacity: 0.8;
+}
+
+.card-img {
+  width: 310px;
+  height: 200px;
+  object-fit: cover;
+  border-left: 3px solid #d4af37;
+}
+
+  </style>
+</head>
+
+<body>
+  <nav>
+    <img class="logo" src="https://i.postimg.cc/KcCbvcYk/1000116041-removebg-preview.png" alt="NovaSite Logo" />
+    <div class="nav-links">
+      <a href="inicio.html" class="active">Página principal</a>
+      <a href="redessociales.html">Redes Sociales</a>
+      <a href="contacto.html">Contacto</a>
+      <a href="articulos.html">Artículos</a>
+    </div>
+  </nav>
+
+  <section id="inicio" class="hero">
+    <img id="hero-img" src="https://i.postimg.cc/QM1TB1FG/PIA20038-orig.jpg" alt="Plutón" />
+    <h1>Articulos</h1>
+  </section>
+    </p>
+
+<a href="noticia1.html" class="card-noticia">
+  
+  <div class="card-texto">
+    <h3>Traslado a Marty’s</h3>
+    <p>El booster del próximo lanzamiento de Sunship fue trasladado.</p>
+  </div>
+
+  <img src="https://i.postimg.cc/ZqmS9Y73/Screenshot-20251113-185417-Gallery.webp" alt="Fire 7.png" class="card-img">
+
+</a>
+
+
+  </section>
+
+  <footer>
+    &copy; 2025 NovaSpace. Todos los derechos reservados.
+  </footer>
+
+</body>
+</html>
+

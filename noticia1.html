@@ -1,0 +1,201 @@
+﻿<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>NovaSite Forum</title>
+
+  <style>
+    @font-face {
+      font-family: 'CustomFontTitle';
+      src: url('https://fonts.googleapis.com/css2?family=Anton&display=swap');
+    }
+
+    @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400&display=swap');
+
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      background-color: #0F0F0F;
+      color: #eee;
+      font-family: 'Montserrat', sans-serif;
+      line-height: 1.6;
+      overflow-x: hidden;
+    }
+
+    nav {
+      position: fixed;
+      top: 0; left: 0; right: 0;
+      height: 70px;
+      background: linear-gradient(90deg, #4b3a0f, #d4af37, #b8860b);
+      display: flex;
+      align-items: center;
+      padding: 0 25px;
+      z-index: 10;
+      font-weight: 600;
+      font-size: 15px;
+      box-shadow: 0 0 15px rgba(212, 175, 55, 0.5);
+    }
+
+    nav img.logo {
+      height: 45px;
+      margin-right: 14px;
+    }
+
+    nav .nav-links {
+      display: flex;
+      gap: 28px;
+      flex-grow: 1;
+    }
+
+    nav .nav-links a {
+      color: #fff4c2;
+      text-decoration: none;
+      cursor: pointer;
+      position: relative;
+      transition: color 0.3s ease;
+    }
+
+    nav .nav-links a:hover {
+      color: #ffffff;
+    }
+
+    nav .nav-links a.active {
+      color: #fff;
+      font-weight: 700;
+    }
+
+    .hero {
+      position: relative;
+      height: 100vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      overflow: hidden;
+    }
+
+    .hero img {
+      position: absolute;
+      top: 0; left: 0;
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      z-index: -1;
+    }
+
+    .hero h1 {
+      font-family: 'Anton', sans-serif;
+      font-size: 6vw;
+      color: white;
+      text-transform: uppercase;
+      text-align: center;
+      letter-spacing: 0.1em;
+      text-shadow: 0 0 15px rgba(0,0,0,0.7);
+      z-index: 2;
+    }
+
+    .content {
+      max-width: 720px;
+      margin: 120px auto 100px auto;
+      padding: 0 20px;
+      font-size: 1.3rem;
+      text-align: justify;
+      line-height: 1.7;
+    }
+
+    .content h2 {
+      font-family: 'Anton', sans-serif;
+      font-size: 3rem;
+      margin-bottom: 24px;
+      color: white;
+      text-align: center;
+      letter-spacing: 0.05em;
+    }
+
+    .content p {
+      margin-bottom: 1.3em;
+    }
+
+.btn-redes {
+  display: block;
+  width: 380px;    
+  max-width: 90%;  
+  background: #ffd700;
+  color: #111;
+  padding: 22px 0;
+  border-radius: 50px;
+  font-weight: 700;
+  cursor: pointer;
+  text-align: center;
+  text-decoration: none;
+  font-size: 1.4rem;
+  margin: 40px auto; 
+  
+  
+  box-shadow: 0 0 25px rgba(255, 215, 0, 0.6);
+
+  
+  transition: transform 0.2s ease, box-shadow 0.3s ease;
+}
+
+
+.btn-redes:hover {
+  transform: scale(1.05);
+  box-shadow: 0 0 45px rgba(255, 215, 0, 0.85);
+}
+
+
+    footer {
+      background-color: #111;
+      color: #eee;
+      text-align: center;
+      padding: 20px;
+      font-size: 0.9rem;
+      margin-top: 40px;
+    }
+  </style>
+</head>
+
+<body>
+  <nav>
+    <img class="logo" src="https://i.postimg.cc/KcCbvcYk/1000116041-removebg-preview.png" alt="NovaSite Logo" />
+    <div class="nav-links">
+      <a href="inicio.html" class="active">Página principal</a>
+      <a href="redessociales.html">Redes Sociales</a>
+      <a href="contacto.html">Contacto</a>
+      <a href="articulos.html">Artículos</a>
+    </div>
+  </nav>
+
+  <section id="inicio" class="hero">
+    <img id="hero-img" src="https://i.postimg.cc/QM1TB1FG/PIA20038-orig.jpg" alt="Plutón" />
+    <h1>Traslado a Martys</h1>
+  </section>
+<p> Este martes a las 10:33 de la mañana, Novaspace llevó a cabo el traslado del booster **Sunship B13** hacia las instalaciones de **Martys**, ubicadas en Melburne, con el objetivo de iniciar las pruebas criogénicas y de motores que preceden al **lanzamiento 6 de Sunship**. Este hito representa un paso fundamental en la preparación de la misión y subraya el compromiso de la empresa con la innovación y la excelencia tecnológica.
+
+El **Sunship B13**, uno de los boosters más avanzados desarrollados por Novaspace, fue cuidadosamente transportado bajo estrictos protocolos de seguridad para evitar cualquier riesgo durante su traslado. Una vez en Martys, el equipo de ingenieros especializados comenzará las **pruebas criogénicas**, evaluando la resistencia del booster a temperaturas extremadamente bajas y asegurando la integridad de los sistemas de combustible líquido y estructuras internas.
+
+Paralelamente, se realizarán **ensayos de motores**, simulando las condiciones de despegue y vuelo para verificar el rendimiento y la estabilidad del booster en tiempo real. Estas pruebas son esenciales para garantizar que el Sunship B13 cumpla con los estándares de seguridad y eficiencia que Novaspace exige en todos sus lanzamientos.
+
+La operación no solo demuestra la precisión logística de Novaspace, sino también la capacidad tecnológica de sus instalaciones en Melburne, que se han consolidado como un centro estratégico para pruebas y desarrollos aeroespaciales. Los ingenieros de la compañía señalaron que este lanzamiento es particularmente significativo, ya que el **Sunship 6** incorporará mejoras en sistemas de propulsión y navegación, basadas en datos obtenidos de vuelos anteriores.
+
+El CEO de Novaspace comentó: “Cada paso en la preparación del Sunship 6 es un reflejo del esfuerzo y la dedicación de nuestros equipos. El traslado del B13 y las pruebas que se realizarán en Martys son clave para garantizar un lanzamiento exitoso y seguro.”
+
+Se espera que las pruebas concluyan en las próximas semanas, tras lo cual el booster será reensamblado para su integración final con la nave Sunship 6, lista para su próximo despegue hacia misiones científicas y comerciales que reforzarán la presencia de Novaspace en la industria espacial internacional.
+<p/> 
+
+
+  <a href="articulos.html" class="btn-redes">volver a inicio</a>
+  </section>
+
+  <footer>
+    &copy; 2025 NovaSpace. Todos los derechos reservados.
+  </footer>
+
+</body>
+</html>
+
